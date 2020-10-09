@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>eHa_Academy_Project</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/theme1.css" id="theme_css">
+		<!--<link rel="stylesheet" type="text/css" href="css/theme2.css">-->
+        <style>
+          h5 {
+                font-family: 'Times New Roman';
+                color: blue;
+            }
+			#myBtn {
+			  display: none;
+			  position: fixed;
+			  bottom: 20px;
+			  right: 30px;
+			  z-index: 99;
+			  font-size: 18px;
+			  border: none;
+			  outline: none;
+			  background-color: blue;
+			  color: white;
+			  cursor: pointer;
+			  padding: 15px;
+			  border-radius: 4px;
+			}
+        </style>  
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			  var checkbox = document.querySelector('input[type="checkbox"]');
+
+			  checkbox.addEventListener('change', function () {
+				if (checkbox.checked) {
+				  // do this
+				  document.getElementById('theme_css').href = 'css/theme2.css';
+				} else {
+				  // do that
+				  document.getElementById('theme_css').href = 'css/theme1.css';
+				}
+			  });
+			});
+		</script>
+		
+    </head>
+    <body>
+		<div class="row">
+			
+			<div class="col-md-3 leftarea">
+				<h2>Switch Night Mode</h2>
+				<label class="switch">
+				  <input type="checkbox" value="0" id="theme">
+				  <span class="slider"></span>
+				</label>
+			</div>
+			<div class="col-md-9">
+				<div class="container wrapper" style="">
+		<div class="row">
+			<div class="col-md-2 text-left p-3">
+				<img src="images/avatar.jpeg"  alt="avatar.jpg" width="50" height="50">
+			</div>
+			<div class="col-md-5 p-3">
+				<h1 class="mt-0">AHMED BABYO</h1>	
+			</div>
+			<div class="col-md-5 text-bottom p-3">
+				<p>ahmedakuyam@gmail.com</p>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"><h5>Intro</h5></div>
+			<div class="col-md-9 p-3"><p>I am a GIS analyst with interest in web development</p></div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"><h5>Interest</h5></div>
+			<div class="col-md-9 p-3"><p>Spatial analysis, Map design, Cartographic visualization, GNSS,Geodesy and Geodynamics</p></div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"><h5>skill</h5></div>
+			<div class="col-md-9 p-3">
+				<p> <img id="planet" src="images/ArcGIS_logo.png" width="100" height="100" title="ArcGIS"> <!--https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img id="planet" src="images/Surfer_logo.png" width="100" height="100" title="Surfer"> <!--https://www.goldensoftware.com/images/Website_Logos/icon-Surfer.png-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img id="creature" src="images/qgis.jpg" width="100" height="100" title="QGIS"> <!--https://media3.picsearch.com/is?u9DJDyz_EaVXKXzXPDsqH0ekmbB-l6sLrFAGbEq94Ak&height=256-->
+                
+        </p>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"> <h5>Education</h5></div>
+			<div class="col-md-9 p-3">
+			<p><b>MTech. Surveying and Geoinformatics</b></p>
+			<p>MAUTECH Yola, Yola Nigeria</p>
+           
+		   <p><b>Masters in GIS</b></p>
+			<p>Bayero University Kano, Kano Nigeria</p><br>
+			
+            <p><b>BTech. Surveying and Geoinformatics</b></p>
+			<p>ATBU Bauchi, Bauchi Nigeria</p>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"><h5>Experience</h5></div>
+			<div class="col-md-9 p-3">
+				<p><b>GIS Analyst</b><br>A2Z Geospatech Ltd<br>Bauchi, Nigeria<br> 
+                Geospatial data collections using ground survey snd remote sensing methods Geodata processing Digital Cartographic visualization Geospatial data analysis
+                </p>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3 text-left p-3"><h5>Projects</h5></div>
+			<div class="col-md-9 p-3"><p>GNSS INS Integration</p></div>
+		</div>
+        
+	</div>
+			</div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    
+	<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+</html>
